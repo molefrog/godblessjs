@@ -125,10 +125,33 @@
 		 <p class="fragment fade-in">Backbone</p>
 	</section>
 
-	<section data-background="#ffffff">
-		<img src="resources/img/coffee-coffee.png"> </img>
+
+
+
+<section data-background="#000000">
+<pre><code data-trim>
+# Greatest Common Divisor
+gcd = (numbers...) ->
+  numbers.reduce (n, m) ->
+    if m == 0 then n else gcd(m, n % m) 
+
+# Least Common Multiple
+lcm = (numbers...) -> 
+  numbers.reduce (n, m) -> 
+    n * m / gcd(n, m)
+</code></pre>
 	</section>
 
+	<section data-background="#000000">
+	<h2>Y-combinator</h2>
+    <pre><code data-trim>
+Y = (f) -> ((g) -> f (x) -> g(g)(x))((g) -> f (x) -> g(g)(x))
+    </code></pre>
+</section>
+
+	<section data-background="#ffffff">
+	<img src="resources/img/coffee-coffee.png"></img>
+</section>
 
 	<section data-background="#ffffff">
 		<img src="resources/img/end_address.png"></img>
