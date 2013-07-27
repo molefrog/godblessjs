@@ -103,6 +103,13 @@ module.exports = function(grunt) {
 			theme: {
 				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
 				tasks: 'themes'
+			}, 
+			index : {
+				files: [ 'index.html' ],
+				tasks : [],
+				options : {
+					livereload : true
+				}
 			}
 		}
 
