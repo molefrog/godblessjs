@@ -37,10 +37,12 @@
 	<!-- Any section element inside of this container is displayed as a slide -->
 	<div class="slides">
 
+	<!-- An introductory part: just a little bit about myself -->
 	<section data-background="#c1d4db">
-		<img src="resources/img/intro_part.png"></img>
+		<a href="http://molefrog.com">
+			<img src="resources/img/intro_part.png"></img>
+		</a>
 	</section>
-
 
 	<section data-background="#25293B">
 		<iframe src="resources/scripts/knife/index.html" height="768" width="1024"> </iframe>
@@ -50,11 +52,11 @@
 		<iframe src="resources/scripts/flowers/index.html" height="768" width="1024"> </iframe>
 	</section>
 
+
+	<!-- The motivation of the talk: community -->
 	<section data-background="#c1d4db">
 		<img src="resources/img/community_logo.png"></img>
 	</section>
-
-
 
 	<section data-background="#ffffff">
 		<img src="resources/img/node_community.png"></img>
@@ -68,23 +70,23 @@
 		<img src="resources/img/jsus_christ.png"></img>
 	</section>
 
-
 	<section data-background="#ffffff">
 		<img src="resources/img/community.png"></img>
 	</section>
 
 
+	<!-- Two main ingredients of community-driven technology -->
 	<section data-background="#c1d4db">
 		<img src="resources/img/ingridients.png"></img>
 	</section>
 
 	<section data-background="#000000">
-		<h1>#1 Source Control</h1>
+		<h2>#1 Source Control</h2>
 		<img src="resources/img/github.png"></img>
 	</section>
 
 	<section data-background="#000000">
-		<h1>#2 Package Manager</h1>
+		<h2>#2 Package Manager</h2>
 		<p class="fragment fade-in">Node : npm</p>
 		<p class="fragment fade-in">Ruby : gem</p>
 		<p class="fragment fade-in">Python : pip</p>
@@ -93,53 +95,41 @@
 	</section>
 
 
+	<!-- Examples of tools with almost perfect development workflow -->
 	<section data-background="#c1d4db">
 		<img src="resources/img/examples.png"></img>
 	</section>
 
 	<section  data-background="#2b3544">
-		<h2>Hakim El Hattab</h2>
-		<img src="resources/img/hakim_el_hattab.png"> </img>
+		<a href="http://hakim.se">
+			<h2>Hakim El Hattab</h2>	
+		</a>
+			<img src="resources/img/hakim_el_hattab.png"></img>
 
-		 <p class="fragment fade-in">Reveal.js</p>
-		 <p class="fragment fade-in">slid.es</p>
+		<a href="http://lab.hakim.se/reveal-js/">
+			<p class="fragment fade-in">Reveal.js</p>
+		</a>
 	</section>
 
 	<section data-background="#838fa0">
-		<h1>NPM in action</h1>
+		<h2>NPM in action</h2>
 		<img src="resources/screencast/npm_install.gif"> </img>
 	</section>
 
 	<section data-background="#838fa0">
-		<h1>LiveReload in action</h1>
+		<h2>LiveReload in action</h2>
 		<img src="resources/screencast/grunt_watch.gif"> </img>
 	</section>
 
-
 	<section  data-background="#2b3544">
-		<h2>Jeremy Ashkenas</h2>
+		<a href="http://ashkenas.com/">
+			<h2>Jeremy Ashkenas</h2>
+		</a>
 		<img src="resources/img/jeremy_ashkenas.png"> </img>
 
-		 <p class="fragment fade-in">CoffeeScript</p>
-		 <p class="fragment fade-in">Underscore</p>
-		 <p class="fragment fade-in">Backbone</p>
-	</section>
-
-
-
-
-<section data-background="#000000">
-<pre><code data-trim>
-# Greatest Common Divisor
-gcd = (numbers...) ->
-  numbers.reduce (n, m) ->
-    if m == 0 then n else gcd(m, n % m) 
-
-# Least Common Multiple
-lcm = (numbers...) -> 
-  numbers.reduce (n, m) -> 
-    n * m / gcd(n, m)
-</code></pre>
+		<a href="http://coffeescript.org/">
+			<p class="fragment fade-in">CoffeeScript</p>
+		</a>
 	</section>
 
 	<section data-background="#000000">
@@ -150,17 +140,14 @@ Y = (f) -> ((g) -> f (x) -> g(g)(x))((g) -> f (x) -> g(g)(x))
 </section>
 
 	<section data-background="#ffffff">
-	<img src="resources/img/coffee-coffee.png"></img>
-</section>
+		<img src="resources/img/coffee-coffee.png"></img>
+	</section>
 
 	<section data-background="#ffffff">
 		<img src="resources/img/end_address.png"></img>
 	</section>
 
-
-
 	</div>
-
 	</div>
 
 	<script src="lib/js/head.min.js"></script>
